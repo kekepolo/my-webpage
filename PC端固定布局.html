@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+<style>
+body,h1,h2,p,ul,figure{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:outside none none;
+}
+#header{
+	width:100%;
+	min-width:1263px;
+	height:70px;
+	background-color:#333;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3)
+	position: relative;
+	z-index: 999;
+}
+#header .center{
+	width:1263px;
+	height:70px;
+	margin:0 auto;
+	
+}
+#header .logo{
+	width:240px;
+	height:70px;
+	color:white;
+	font-size:40px;
+	float:left;
+}
+#header .link{
+	width:650px;
+	float:right;
+	line-height: 70px;
+	float:right;
+	color:#eee;
+
+}
+#header .link li{
+	float:left;
+	width:120px;
+	text-align: center;
+	
+}
+#header .link a{
+	color:#eee;
+	display:block;
+}
+a{
+	text-decoration: none;
+}
+#header .link a:hover,#header .active a{
+	background-color: #000;
+}
+.none{
+	display: none;
+}
+#search{
+	width:100%;
+	min-width:1263px;
+	height:600px;
+	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503024653617&di=90d10fd7a4be2fcfa76103fa68368492&imgtype=0&src=http%3A%2F%2Flotr.ntr-ossan.com%2Fwp-content%2Fuploads%2F2013%2F12%2Frivendell_1.jpg)no-repeat center;
+	position: relative;
+}
+#search  .center{
+	width:600px;
+	height:60px;
+	position:absolute;
+	background-color:#666;
+	top:50%;
+	left:50%;
+	margin:-30px 0 0 -300px;
+	opacity: 0.6;
+	border-radius: 10px;
+
+}
+#search .search{
+	width:446px;
+	height:54px;
+	background-color: #fff;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin:-27px 0 0 -296px;
+	color:#666;
+	border:1px solid #666;
+	border-radius: 10px;
+	font-size:24px;
+	padding:0 10px;
+	outline:none;
+
+}
+#search .button{
+	width:120px;
+	height:54px;
+	background-color: #eee;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin:-27px 0 0 175px;
+	color:#666;
+	border:1px solid #666;
+	border-radius: 10px;
+	font-size:24px;
+	padding:0 10px;
+	outline:none;
+	cursor: pointer;
+    font-weight: bold;
+}
+#tour{
+	width:1263px;
+	height:1200px;
+	margin:30px auto;
+	/*background:gray;*/
+	text-align:center;
+}
+
+#tour .center h2{
+	font-size:45px;
+	letter-spacing: 2px;
+	color:#666;
+	margin:10px 0;
+}
+#tour .center p{
+	color:#666;
+	margin:10px 0;
+}
+#tour figure{
+	border:1px solid #ddd;
+	display:inline-block;
+	padding:4px;
+	border-radius: 4px;
+	margin:7px 10px;
+	width:380px;
+	text-align: left;
+	position: relative;
+}
+#tour figure image{
+	vertical-align: middle;
+
+}
+
+#tour figure figcaption{
+	
+	color:#777;
+	line-height:1.5;
+	letter-spacing: 1px;
+	font-size:14px;
+	padding:7px 0 5px 0;
+}
+#tour .title{
+	color:#333;
+	font-weight: normal;
+}
+#tour .sat{
+	float:right;
+	font-size:13px;
+	color: #999;
+	font-style: normal;
+	position: relative;
+	top:5px;
+	right:5px;
+}
+#tour .price{
+	color:orange;
+	font-size: 14px;
+}
+#tour .price strong{
+	font-size:20px;
+	letter-spacing: 1px;
+}
+#tour .type{
+	background-color:#59b200;
+	width:90px;
+	height:25px;
+    line-height:25px;
+    font-size:14px;
+    text-align: center;
+    color:#fff;
+    position: absolute;
+    top:4px;
+    left:4px;
+}
+#footer{
+	height:360px;
+	background-color:#222;
+}
+#footer .top{
+	width:1263px;
+	height:280px;
+	margin:0 auto;
+}
+#footer .bottom{
+	height:80px;
+	background-color:#000;
+	text-align:center;
+	line-height:80px;
+	color:#777;
+	border-top:1px solid #444;
+}
+#footer .block{
+	width:410px;
+	height:280px;
+    display: inline-block;
+    text-align:left;
+    /*background-color: red;*/
+    color:#ccc;
+    vertical-align: top;
+}
+#footer h2{
+	font-size:24px;
+	font-weight: normal;
+	padding:20px 0 0 20px;
+}
+#footer hr{
+	width:90%;
+	border:1px dashed #333;
+}
+#footer ul{
+	font-size:18px;
+	color:#777;
+	text-indent: 20px;
+	line-height: 2;
+}
+</style>
+</head>
+<body>
+<header id="header">
+   
+	<div class="center">
+	<h1 class="logo">瓢城旅行社</h1>
+	<nav class="link">
+	   <h2 class="none">网站导航</h2>
+	  <ul>
+	      <li class="active"><a href="###">首页</a></li>
+	      <li><a href="###">旅游资讯</a></li>
+	      <li><a href="###">机票订购</a></li>
+	      <li><a href="###">风景欣赏</a></li>
+	      <li><a href="###">公司简介</a></li>
+	  </ul>
+	 </nav>
+	</div>
+</header>
+<div id="search">
+	<div class="center">
+		<input type="text" class="search" placeholder="请输入旅游景点城市">
+         <button class="button">搜索</button>
+	</div>
+</div>
+<div id="tour">
+	<section class="center">
+	   <h2>热门旅游</h2>
+	   <p>国内旅游、国外旅游、自助旅游、自驾旅游、邮轮签证、主题旅游等各种最新热门旅游推荐</p>
+	</section>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030847910&di=18b6c0c50012580b451be3bb80a22cf4&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2015%2Fsaraxuss%2F04%2F08%2Ffj%2F2%2F10.jpg" alt="曼谷六人游">
+		<figcaption><strong class="title">&lt;曼谷六人游&gt;</strong>包团特惠，更赠送600元/成人自费劵</figcaption>
+		<div>
+		   <em class="sat">满意度 77%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">国内长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848072&di=de9388836ead926d98a232591037962b&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F5%2F5358e09ce4fd4.jpg" alt="马尔代夫六人游">
+		<figcaption><strong class="title">&lt;马尔代夫六人游&gt;</strong>上海出发，机+酒包含：早晚餐+快艇</figcaption>
+		<div>
+		   <em class="sat">满意度 97%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">出境长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848071&di=192c23623d974cef1a5ad2036631b494&imgtype=0&src=http%3A%2F%2Fimg1.3lian.com%2F2015%2Fw1%2F75%2Fd%2F83.jpg" alt="马尔代夫六人游">
+		<figcaption><strong class="title">&lt;马尔代夫六人游&gt;</strong>上海出发，机+酒包含：早晚餐+快艇</figcaption>
+		<div>
+		   <em class="sat">满意度 97%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">出境长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848071&di=619e55792082b57e901401b68a31cd46&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2013%2Flxy%2F12%2F27%2F2%2F9.jpg" alt="曼谷六人游">
+		<figcaption><strong class="title">&lt;曼谷六人游&gt;</strong>包团特惠，更赠送600元/成人自费劵</figcaption>
+		<div>
+		   <em class="sat">满意度 77%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">国内长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848070&di=8cfb6eae664ad0c9ef4feb88c1712f5d&imgtype=0&src=http%3A%2F%2Fbizhi.zhuoku.com%2F2010%2F01%2F0103%2Ffengguang%2Ffengguang046.jpg" alt="马尔代夫六人游">
+		<figcaption><strong class="title">&lt;马尔代夫六人游&gt;</strong>上海出发，机+酒包含：早晚餐+快艇</figcaption>
+		<div>
+		   <em class="sat">满意度 97%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">出境长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848070&di=6bd94ae000b8de39855af1f31e1c6197&imgtype=0&src=http%3A%2F%2Fbizhi.zhuoku.com%2F2015%2F05%2F31%2Fbing%2Fbing03.jpg" alt="马尔代夫六人游">
+		<figcaption><strong class="title">&lt;马尔代夫六人游&gt;</strong>上海出发，机+酒包含：早晚餐+快艇</figcaption>
+		<div>
+		   <em class="sat">满意度 97%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">出境长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848070&di=1b71dc5b35cdcd3f637281583c150e5d&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2015%2Fxu%2F08%2F11%2F3%2F1.jpg" alt="曼谷六人游">
+		<figcaption><strong class="title">&lt;曼谷六人游&gt;</strong>包团特惠，更赠送600元/成人自费劵</figcaption>
+		<div>
+		   <em class="sat">满意度 77%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">国内长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848069&di=dc4b634c89372ddbe6db0a9f5ff422e5&imgtype=0&src=http%3A%2F%2Fimgstore.cdn.sogou.com%2Fapp%2Fa%2F100540002%2F473169.jpg" alt="马尔代夫六人游">
+		<figcaption><strong class="title">&lt;马尔代夫六人游&gt;</strong>上海出发，机+酒包含：早晚餐+快艇</figcaption>
+		<div>
+		   <em class="sat">满意度 97%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">出境长线</div>
+		</div>
+	</figure>
+	<figure>
+		<img style="width:380px;height:280px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503030848068&di=0823151cf0ae4558f8a64f52187443b7&imgtype=0&src=http%3A%2F%2Fimg2.3lian.com%2F2014%2Fc7%2F32%2Fd%2F52.jpg" alt="马尔代夫六人游">
+		<figcaption><strong class="title">&lt;马尔代夫六人游&gt;</strong>上海出发，机+酒包含：早晚餐+快艇</figcaption>
+		<div>
+		   <em class="sat">满意度 97%</em>
+		   <span class="price">¥ <strong>2864</strong> 起</span>
+		   <div class="type">出境长线</div>
+		</div>
+	</figure>
+</div>
+<footer id="footer">
+   <div class="top">
+   	  <div class="block left">
+   	  <h2>合作伙伴</h2>
+   	  <hr>
+   	   <ul>
+   	  	<li>途牛旅游网</li>
+   	  	<li>驴妈妈旅游网</li>
+   	  	<li>携程旅游</li>
+   	  	<li>中国青年旅行社</li>
+   	  </ul>
+   	  </div>
+   	 
+   	  <div class="block center">
+   	  	<h2>旅游FAQ</h2>
+   	  <hr>
+   	   <ul>
+   	  	<li>旅游合同签订方式？</li>
+   	  	<li>儿童价是基于什么制定的？</li>
+   	  	<li>旅游线路品质怎么界定？</li>
+   	  	<li>单房差是什么？</li>
+   	  	<li>旅游保险有哪些种类？</li>
+   	  </ul>
+   	  </div>
+   	  <div class="block right">
+   	  	<h2>联系方式</h2>
+   	  <hr>
+   	   <ul>
+   	  	<li>微博：weibo.com/ycku</li>
+   	  	<li>邮件：ycku@ycku.com</li>
+   	  	<li>地址：江苏盐城无名路123号</li>
+   	  	
+   	  </ul>
+   	  </div>
+   </div>
+   <div class="bottom">Copyright ©瓢城旅行社| 苏ICP 备120110129 号| 旅行社经营许可证：-YC-BK12345
+   </div>
+</footer>
+</body>
+</html>
